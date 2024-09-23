@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+  }
+    
+  * {  
+    margin: 0;
+    box-sizing: border-box;
+  }
+    
+  body {
+    background-color: rgb(193, 222, 223);
+    background-size: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  header {
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    height: 5%;
+    background-color: #061b24;
+    color: antiquewhite;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: solid;
+  }
+    
+  main {
+    position: relative;
+    flex: 1;
+    align-items: center;
+  }
+  
+  footer {
+    position: relative; 
+    width: 100%;
+    background-color: #061b24;
+    padding: 10px;
+    height: 5%;
+    color: antiquewhite;
+    bottom: 0;
+  }
+.contenedor
+{
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  align-items: center;
+}
+.horizontal
+{
+  position: relative;
+  grid-column: span 3;
+  background-color: black;
+  height: 200px;
+  border: 7px;
+  border-color: black;
+  border-style: groove;
+}
+.vertical
+{
+  position: relative;
+  grid-column: span 2;
+  background-color: black;
+  height: 300px;
+  border: 7px;
+  border-color: black;
+  border-style: groove;
+}
+.horizontal img
+{
+  width: 100%; 
+  height: 100%;    
+  object-fit: cover; 
+}
+.vertical img
+{
+  width: 100%; 
+  height: 100%;    
+  object-fit: cover; 
+}
+.texto
+{
+  position: absolute;
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  width: 100%; 
+  padding: 10px;
+}
